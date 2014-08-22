@@ -52,6 +52,9 @@
     <Compile Include="Singleton\AnotherLazySingleton.cs" />
     <Compile Include="Singleton\LazySingleton.cs" />
     <Compile Include="Singleton\EagerSingleton.cs" />
+    <Compile Include="Template\Commande.cs" />
+    <Compile Include="Template\CommandeFrance.cs" />
+    <Compile Include="Template\CommandeLuxembourg.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

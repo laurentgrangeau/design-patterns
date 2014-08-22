@@ -1,6 +1,7 @@
 ﻿namespace DesignPatterns
 {
     using Decorator;
+    using Template;
     using Singleton;
     using System;
 
@@ -24,6 +25,14 @@
             var sandwichOneLine = new SaladeToppingDecorator(new TomateToppingDecorator(new BlancSandwich()));
 
             Console.WriteLine(sandwichOneLine.Make());
+
+            // Template
+            var commandeFrance = new CommandeFrance(1000);
+            var commandeLuxembourg = new CommandeLuxembourg(1000);
+
+            Console.WriteLine("Commande France TTC : " + commandeFrance.Calculer());
+            Console.WriteLine("Commande Luxembourg TTC : " + commandeLuxembourg.Calculer());
+
             Console.ReadLine();
         }
     }
